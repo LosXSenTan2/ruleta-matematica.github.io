@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
+}
+
+
+#score {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#start {
+    background-color: #007BFF;
+}
+
+.answer {
+    background-color: #28A745;
+}
+
+.answer[disabled] {
+    background-color: #6C757D;
+}
+
+#problem {
+    margin-bottom: 20px;
+}
+
+#instructions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#final-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 100;
+}
+
+#final-score {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#final-hits {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 100;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#play-again {
+    width: 100px;
+    margin-top: 20px;
+    background-color: #007BFF;
+}
+
+#continue, #finish {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#continue {
+    background-color: #007BFF;
+}
+
+#finish {
+    background-color: #dc3545;
+}

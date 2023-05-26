@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruleta Matemática</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Ruleta Matemática</h1>
+        <div id="score">Puntuación: 0</div>
+        <button id="start">Jugar</button>
+        <div id="game">
+            <p id="problem">Aquí va el problema</p>
+            <button class="answer" disabled>Respuesta 1</button>
+            <button class="answer" disabled>Respuesta 2</button>
+            <button class="answer" disabled>Respuesta 3</button>
+            <button class="answer" disabled>Respuesta 4</button>
+            <button id="continue">Continuar</button>
+            <button id="finish">Finalizar</button>
+            <p id="correct-message"></p>
+            <p id="incorrect-message"></p>
+        </div>
+        <div id="instructions">Aquí van las instrucciones de cómo resolver el problema.</div>
+        <div id="video-container"></div>
+        <div id="final-screen" class="overlay">
+            <div class="overlay-content">
+                <h2>Resultados</h2>
+                <p>Puntuación: <span id="final-score"></span></p>
+                <p>Número de aciertos: <span id="final-hits"></span></p>
+                <button id="play-again">Jugar de nuevo</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
